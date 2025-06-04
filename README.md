@@ -27,7 +27,7 @@ The database includes three main tables: **`members`**, **`facilities`**, and **
 
 | Column Name          | Data Type      | Description                                    |
 |:---------------------|:---------------|:-----------------------------------------------|
-| `facid`              | `integer`      | Unique ID for each facility. Primary key.      |
+| `facid`              | `integer`      | Unique ID for each facility (Primary key).     |
 | `name`               | `varchar(100)` | Name of the facility (e.g., Tennis Court 1).   |
 | `membercost`         | `numeric`      | Cost for members to use the facility per slot. |
 | `guestcost`          | `numeric`      | Cost for guests (non-members) per slot.        |
