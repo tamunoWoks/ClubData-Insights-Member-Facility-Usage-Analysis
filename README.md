@@ -13,7 +13,7 @@ The database includes three main tables: `**members**`, `**facilities**`, and `*
 1. **Members:** Stores information about the club’s members.
 
 | Column Name     | Data Type      | Description                                                                                    |
-|!----------------|!---------------|!-----------------------------------------------------------------------------------------------|
+|:----------------|:---------------|:-----------------------------------------------------------------------------------------------|
 | `memid`         | `integer`      | Unique ID for each member. Primary key.                                                        |
 | `surname`       | `varchar(200)` | Member's last name.                                                                            |
 | `firstname`     | `varchar(200)` | Member's first name.                                                                           |
