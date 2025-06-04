@@ -1,8 +1,4 @@
 ##### - Retrieve all the information from the facilities table.
-```sql
-SELECT *
-FROM cd.facilities;
-```
 |facid|name           |membercost|guestcost|initialoutlay|monthlymaintenance|
 |-----|---------------|----------|---------|-------------|------------------|
 |0    |Tennis Court 1 |5         |25       |10000        |200               |
@@ -16,8 +12,6 @@ FROM cd.facilities;
 |8    |Pool Table     |0         |5        |400          |15                |
 
 ##### - Retrieve a list of only facility names and cost of usage.
-SELECT name, membercost, guestcost
-FROM cd.facilities;
 |name           |membercost|guestcost|
 |---------------|----------|---------|
 |Tennis Court 1 |5         |25       |
