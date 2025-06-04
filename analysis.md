@@ -1,6 +1,6 @@
 #### - Retrieve all the information from the facilities table.
 |facid|name           |membercost|guestcost|initialoutlay|monthlymaintenance|
-|-----|---------------|----------|---------|-------------|------------------|
+|:----|:--------------|:---------|:--------|:------------|:-----------------|
 |0    |Tennis Court 1 |5         |25       |10000        |200               |
 |1    |Tennis Court 2 |5         |25       |8000         |200               |
 |2    |Badminton Court|0         |15.5     |4000         |50                |
@@ -13,7 +13,7 @@
 ---
 #### - Retrieve a list of only facility names and cost of usage.
 |name           |membercost|guestcost|
-|---------------|----------|---------|
+|:--------------|:---------|:--------|
 |Tennis Court 1 |5         |25       |
 |Tennis Court 2 |5         |25       |
 |Badminton Court|0         |15.5     |
