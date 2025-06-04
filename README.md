@@ -46,15 +46,15 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 | `slots`     | `integer`   | Number of time slots booked (each slot might represent a fixed duration, e.g., 30 mins). |
 
 ### Entity Relationship Diagram
-##### Entities and Relationships
-1. Members
+#### Entities and Relationships
+#### Members
   - Primary Key: memid
   - Attributes: surname, firstname, address, zipcode, telephone, recommendedby, joindate
   - Self-referential relationship: recommendedby references memid (a member can recommend other members).  
-2. Facilities
+#### Facilities
   - Primary Key: facid
   - Attributes: name, membercost, guestcost, initialoutlay, monthlymaintenance.  
-3. Bookings
+#### Bookings
   - Primary Key: bookid
   - Foreign Keys:
     - facid references Facilities
