@@ -9,7 +9,5 @@ The goal of this project is to use PostgreSQL and analytical techniques to:
 - Provide actionable recommendations to improve operations and member satisfaction.
 
 ### Dataset
-The dataset includes tables for:
-- **Members:** Club members with details like name, contact, and join date.
-- **Facilities:** The facilities available (e.g., tennis court, gym) with costs.
-- **Bookings:** When members booked various facilities.
+The database includes three main tables: `members`, `facilities`, and `bookings`, all within the `cd` schema. Here's a breakdown of each table's columns and their meanings:
+
