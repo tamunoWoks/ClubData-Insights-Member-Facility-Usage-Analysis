@@ -9,7 +9,7 @@ The goal of this project is to use PostgreSQL and analytical techniques to:
 - Provide actionable recommendations to improve operations and member satisfaction.
 
 ### Dataset
-The database includes three main tables: `**members**`, `**facilities**`, and `**bookings**`, all within the `**cd**` schema. Here's a breakdown of each table's columns and their meanings:
+The database includes three main tables: **`members`**, `facilities`, and `bookings`, all within the `cd` schema. Here's a breakdown of each table's columns and their meanings:
 1. **Members:** Stores information about the club’s members.
 
 | Column Name     | Data Type      | Description                                                                                    |
