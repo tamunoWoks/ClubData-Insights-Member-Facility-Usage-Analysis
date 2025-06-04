@@ -10,7 +10,7 @@
 |6    |Squash Court   |3.5       |17.5     |5000         |80                |
 |7    |Snooker Table  |0         |5        |450          |15                |
 |8    |Pool Table     |0         |5        |400          |15                |
-
+---
 #### - Retrieve a list of only facility names and cost of usage.
 |name           |membercost|guestcost|
 |---------------|----------|---------|
@@ -23,7 +23,7 @@
 |Squash Court   |3.5       |17.5     |
 |Snooker Table  |0         |5        |
 |Pool Table     |0         |5        |
-
 **Observation:**  
 1. Guests usually pay way more to use each facility than members.
 2. Some facilities like the `Badminton Court`,  `Table Tennis`, `Snooker Table`, & `Pool Table`, are absolutely free for members.
+---
