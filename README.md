@@ -22,3 +22,14 @@ The database includes three main tables: **`members`**, **`facilities`**, and **
 | `telephone`     | `varchar(20)`  | Member’s phone number.                                                                         |
 | `recommendedby` | `integer`      | ID of the member who referred this member (foreign key pointing to `memid` in the same table). |
 | `joindate`      | `timestamp`    | Date and time the member joined the club.                                                      |
+
+2. **Facilities:** Contains information about the club’s facilities (e.g., gym, pool).
+
+| Column Name          | Data Type      | Description                                    |
+|:---------------------|:---------------|:-----------------------------------------------|
+| `facid`              | `integer`      | Unique ID for each facility. Primary key.      |
+| `name`               | `varchar(100)` | Name of the facility (e.g., Tennis Court 1).   |
+| `membercost`         | `numeric`      | Cost for members to use the facility per slot. |
+| `guestcost`          | `numeric`      | Cost for guests (non-members) per slot.        |
+| `initialoutlay`      | `numeric`      | Initial cost to set up the facility.           |
+| `monthlymaintenance` | `numeric`      | Monthly maintenance cost of the facility.      |
