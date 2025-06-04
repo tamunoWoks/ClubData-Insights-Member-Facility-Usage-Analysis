@@ -2,7 +2,7 @@
 SELECT *
 FROM cd.facilities;
 
--- Print out a list of all of the facilities and their cost to members.
-SELECT name, membercost
+--- Retrieve a list of only facility names and cost of usage.
+SELECT name, membercost, guestcost
 FROM cd.facilities;
 
