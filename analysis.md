@@ -15,19 +15,17 @@ FROM cd.facilities;
 |7    |Snooker Table  |0         |5        |450          |15                |
 |8    |Pool Table     |0         |5        |400          |15                |
 
-##### - Print out a list of all of the facilities and their cost to members.
-```sql
-SELECT name, membercost
+##### - Retrieve a list of only facility names and cost of usage.
+SELECT name, membercost, guestcost
 FROM cd.facilities;
-```
-|name           |membercost|
-|---------------|----------|
-|Tennis Court 1 |5         |
-|Tennis Court 2 |5         |
-|Badminton Court|0         |
-|Table Tennis   |0         |
-|Massage Room 1 |35        |
-|Massage Room 2 |35        |
-|Squash Court   |3.5       |
-|Snooker Table  |0         |
-|Pool Table     |0         |
+|name           |membercost|guestcost|
+|---------------|----------|---------|
+|Tennis Court 1 |5         |25       |
+|Tennis Court 2 |5         |25       |
+|Badminton Court|0         |15.5     |
+|Table Tennis   |0         |5        |
+|Massage Room 1 |35        |80       |
+|Massage Room 2 |35        |80       |
+|Squash Court   |3.5       |17.5     |
+|Snooker Table  |0         |5        |
+|Pool Table     |0         |5        |
