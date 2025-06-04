@@ -14,7 +14,7 @@ The database includes three main tables: `**members**`, `**facilities**`, and `*
 
 | Column Name     | Data Type      | Description                                                                                    |
 |:----------------|:---------------|:-----------------------------------------------------------------------------------------------|
-| `memid`         | `integer`      | Unique ID for each member. Primary key.                                                        |
+| `memid`         | `integer`      | Unique ID for each member (Primary key).                                                       |
 | `surname`       | `varchar(200)` | Member's last name.                                                                            |
 | `firstname`     | `varchar(200)` | Member's first name.                                                                           |
 | `address`       | `varchar(300)` | Member's residential address.                                                                  |
