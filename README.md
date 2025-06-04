@@ -10,10 +10,10 @@ The goal of this project is to use PostgreSQL and analytical techniques to:
 
 ### Dataset
 The database includes three main tables: `**members**`, `**facilities**`, and `**bookings**`, all within the `**cd**` schema. Here's a breakdown of each table's columns and their meanings:
-1. `**members**` Table
-**Purpose:** Stores information about the club’s members.  
+1. **Members:** Stores information about the club’s members.
+
 | Column Name     | Data Type      | Description                                                                                    |
-| --------------- | -------------- | ---------------------------------------------------------------------------------------------- |
+|!----------------|!---------------|!-----------------------------------------------------------------------------------------------|
 | `memid`         | `integer`      | Unique ID for each member. Primary key.                                                        |
 | `surname`       | `varchar(200)` | Member's last name.                                                                            |
 | `firstname`     | `varchar(200)` | Member's first name.                                                                           |
