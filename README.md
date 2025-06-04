@@ -44,3 +44,17 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 | `memid`     | `integer`   | ID of the member who made the booking (foreign key to `members.memid`).                  |
 | `starttime` | `timestamp` | Start time of the booking.                                                               |
 | `slots`     | `integer`   | Number of time slots booked (each slot might represent a fixed duration, e.g., 30 mins). |
+
+### ERD
++---------------+       +----------------+       +---------------+
+|    Members    |       |   Bookings     |       |  Facilities   |
++---------------+       +----------------+       +---------------+
+| PK memid      |<------| PK bookid      |------>| PK facid      |
+| surname       |       | FK facid       |       | name          |
+| firstname     |       | FK memid       |       | membercost    |
+| address       |       | starttime      |       | guestcost     |
+| zipcode       |       | slots          |       | initialoutlay |
+| telephone     |       +----------------+       | monthlymainte-|
+| recommendedby |                               | nance         |
+| joindate      |                               +---------------+
++---------------+
