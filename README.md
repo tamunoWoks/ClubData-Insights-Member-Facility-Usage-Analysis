@@ -33,3 +33,13 @@ The database includes three main tables: **`members`**, **`facilities`**, and **
 | `guestcost`          | `numeric`      | Cost for guests (non-members) per slot.        |
 | `initialoutlay`      | `numeric`      | Initial cost to set up the facility.           |
 | `monthlymaintenance` | `numeric`      | Monthly maintenance cost of the facility.      |
+
+3. **Bookings:** Tracks when members book various facilities.
+
+| Column Name | Data Type   | Description                                                                              |
+|:------------|:------------|:-----------------------------------------------------------------------------------------|
+| `bookid`    | `integer`   | Unique booking ID (Primary key).                                                         |
+| `facid`     | `integer`   | ID of the booked facility (foreign key to `facilities.facid`).                           |
+| `memid`     | `integer`   | ID of the member who made the booking (foreign key to `members.memid`).                  |
+| `starttime` | `timestamp` | Start time of the booking.                                                               |
+| `slots`     | `integer`   | Number of time slots booked (each slot might represent a fixed duration, e.g., 30 mins). |
