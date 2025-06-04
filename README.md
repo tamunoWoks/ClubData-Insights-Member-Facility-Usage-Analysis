@@ -1,14 +1,14 @@
-# ClubData Insights: Member & Facility Usage Analysis
+## ClubData Insights: Member & Facility Usage Analysis
 This project analyzes data from a fictional sports and fitness club to uncover insights into member behavior, facility utilization, and revenue potential. 
 
-### Project Goals
+#### Project Goals
 The goal of this project is to use PostgreSQL and analytical techniques to:
 - Track booking trends across different facilities.
 - Identify high-value members and their usage patterns.
 - Analyze facility profitability and cost-effectiveness.
 - Provide actionable recommendations to improve operations and member satisfaction.
 
-### Dataset
+#### Dataset
 The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/clubdata.sql) includes three main tables: [**`members`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/members.csv), [**`facilities`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/facilities.csv), and [**`bookings`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/bookings.csv), all within the **`cd`** schema. Here's a breakdown of each table's columns and their meanings:  
 
 1. **Members:** Stores information about the club’s members.
@@ -45,11 +45,11 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 | `starttime` | `timestamp` | Start time of the booking.                                                               |
 | `slots`     | `integer`   | Number of time slots booked (each slot might represent a fixed duration, e.g., 30 mins). |
 
-### Entities and Relationships
+#### Entities and Relationships
 ##### Members
   - Primary Key: `memid`
   - Attributes: `surname`, `firstname`, `address`, `zipcode`, `telephone`, `recommendedby`, `joindate`
-  - Self-referential relationship: `recommendedby` references memid (a member can recommend other members).  
+  - Self-referential relationship: `recommendedby` references `memid` (a member can recommend other members).  
 ##### Facilities
   - Primary Key: `facid`
   - Attributes: `name`, `membercost`, `guestcost`, `initialoutlay`, `monthlymaintenance`.  
@@ -62,3 +62,8 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 
 #### Entity Relationship Diagram
 ![ERD](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/images/ERD.png)
+
+#### Key Relationships:
+1. **Members to Bookings:** One-to-many (a member can make many bookings)
+2. **Facilities to Bookings:** One-to-many (a facility can have many bookings)
+3. **Members to Members:** One-to-many (a member can recommend many other members)
