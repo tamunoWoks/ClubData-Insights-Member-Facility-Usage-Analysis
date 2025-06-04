@@ -45,20 +45,19 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 | `starttime` | `timestamp` | Start time of the booking.                                                               |
 | `slots`     | `integer`   | Number of time slots booked (each slot might represent a fixed duration, e.g., 30 mins). |
 
-### Entity Relationship Diagram
-#### Entities and Relationships
-#### Members
+### Entities and Relationships
+##### Members
   - Primary Key: memid
   - Attributes: surname, firstname, address, zipcode, telephone, recommendedby, joindate
   - Self-referential relationship: recommendedby references memid (a member can recommend other members).  
-#### Facilities
+##### Facilities
   - Primary Key: facid
   - Attributes: name, membercost, guestcost, initialoutlay, monthlymaintenance.  
-#### Bookings
+##### Bookings
   - Primary Key: bookid
   - Foreign Keys:
     - facid references Facilities
     - memid references Members
   - Attributes: starttime, slots.
-
+#### Entity Relationship Diagram
 ![ERD](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/images/ERD.png)
