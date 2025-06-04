@@ -47,17 +47,18 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 
 ### Entities and Relationships
 ##### Members
-  - Primary Key: memid
-  - Attributes: surname, firstname, address, zipcode, telephone, recommendedby, joindate
-  - Self-referential relationship: recommendedby references memid (a member can recommend other members).  
+  - Primary Key: `memid`
+  - Attributes: `surname`, `firstname`, `address`, `zipcode`, `telephone`, `recommendedby`, `joindate`
+  - Self-referential relationship: `recommendedby` references memid (a member can recommend other members).  
 ##### Facilities
-  - Primary Key: facid
-  - Attributes: name, membercost, guestcost, initialoutlay, monthlymaintenance.  
+  - Primary Key: `facid`
+  - Attributes: `name`, `membercost`, `guestcost`, `initialoutlay`, `monthlymaintenance`.  
 ##### Bookings
-  - Primary Key: bookid
+  - Primary Key: `bookid`
   - Foreign Keys:
-    - facid references Facilities
-    - memid references Members
-  - Attributes: starttime, slots.
+    - `facid` references Facilities
+    - `memid` references Members
+  - Attributes: `starttime`, `slots`.cc
+
 #### Entity Relationship Diagram
 ![ERD](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/images/ERD.png)
