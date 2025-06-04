@@ -9,7 +9,7 @@ The goal of this project is to use PostgreSQL and analytical techniques to:
 - Provide actionable recommendations to improve operations and member satisfaction.
 
 ### Dataset
-The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/clubdata.sql) includes three main tables: [**`members`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/members.csv), **`[facilities]`**, and **`[bookings]`**, all within the **`cd`** schema. Here's a breakdown of each table's columns and their meanings:  
+The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/clubdata.sql) includes three main tables: [**`members`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/members.csv), [**`facilities`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/facilities.csv), and [**`bookings`**](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/csv's/bookings.csv), all within the **`cd`** schema. Here's a breakdown of each table's columns and their meanings:  
 
 1. **Members:** Stores information about the club’s members.
 
