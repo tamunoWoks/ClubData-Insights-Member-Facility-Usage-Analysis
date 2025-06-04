@@ -17,5 +17,17 @@ FROM cd.facilities;
 
 ##### - Print out a list of all of the facilities and their cost to members.
 ```sql
-
+SELECT name, membercost
+FROM cd.facilities;
 ```
+|name           |membercost|
+|---------------|----------|
+|Tennis Court 1 |5         |
+|Tennis Court 2 |5         |
+|Badminton Court|0         |
+|Table Tennis   |0         |
+|Massage Room 1 |35        |
+|Massage Room 2 |35        |
+|Squash Court   |3.5       |
+|Snooker Table  |0         |
+|Pool Table     |0         |
