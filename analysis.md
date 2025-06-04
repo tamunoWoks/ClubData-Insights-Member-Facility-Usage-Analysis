@@ -1,4 +1,4 @@
-##### - Retrieve all the information from the facilities table
+##### - Retrieve all the information from the facilities table.
 ```sql
 SELECT *
 FROM cd.facilities;
@@ -14,3 +14,8 @@ FROM cd.facilities;
 |6    |Squash Court   |3.5       |17.5     |5000         |80                |
 |7    |Snooker Table  |0         |5        |450          |15                |
 |8    |Pool Table     |0         |5        |400          |15                |
+
+##### - Print out a list of all of the facilities and their cost to members.
+```sql
+
+```
