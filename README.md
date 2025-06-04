@@ -46,15 +46,4 @@ The [database](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-U
 | `slots`     | `integer`   | Number of time slots booked (each slot might represent a fixed duration, e.g., 30 mins). |
 
 ### ERD
-+---------------+       +----------------+       +---------------+
-|    Members    |       |   Bookings     |       |  Facilities   |
-+---------------+       +----------------+       +---------------+
-| PK memid      |<------| PK bookid      |------>| PK facid      |
-| surname       |       | FK facid       |       | name          |
-| firstname     |       | FK memid       |       | membercost    |
-| address       |       | starttime      |       | guestcost     |
-| zipcode       |       | slots          |       | initialoutlay |
-| telephone     |       +----------------+       | monthlymainte-|
-| recommendedby |                               | nance         |
-| joindate      |                               +---------------+
-+---------------+
+![ERD](https://github.com/tamunoWoks/ClubData-Insights-Member-Facility-Usage-Analysis/blob/main/images/ERD.png)
