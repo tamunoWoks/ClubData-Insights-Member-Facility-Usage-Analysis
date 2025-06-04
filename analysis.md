@@ -23,3 +23,7 @@
 |Squash Court   |3.5       |17.5     |
 |Snooker Table  |0         |5        |
 |Pool Table     |0         |5        |
+
+**Observation:**  
+1. Guests usually pay way more to use each facility than members.
+2. Some facilities like the `Badminton Court`,  `Table Tennis`, `Snooker Table`, & `Pool Table`, are absolutely free for members.
