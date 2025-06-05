@@ -25,3 +25,7 @@ WHERE name LIKE '%Tennis%';
 SELECT *
 FROM cd.facilities
 WHERE facid = 1 OR facid = 5;
+--- This can also be written as:
+SELECT *
+FROM cd.facilities
+WHERE facid In (1,5);
