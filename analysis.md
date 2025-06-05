@@ -1,4 +1,4 @@
-#### - Retrieve all the information from the facilities table.
+#### - All the information from the facilities table.
 |facid|name           |membercost|guestcost|initialoutlay|monthlymaintenance|
 |:----|:--------------|:---------|:--------|:------------|:-----------------|
 |0    |Tennis Court 1 |5         |25       |10000        |200               |
@@ -11,7 +11,7 @@
 |7    |Snooker Table  |0         |5        |450          |15                |
 |8    |Pool Table     |0         |5        |400          |15                |
 ---
-#### - Retrieve a list of only facility names and cost of usage.
+#### - A list of only facility names and cost of usage.
 |name           |membercost|guestcost|
 |:--------------|:---------|:--------|
 |Tennis Court 1 |5         |25       |
@@ -28,7 +28,7 @@
 1. Guests usually pay way more to use each facility than members.
 2. Some facilities like the `Badminton Court`,  `Table Tennis`, `Snooker Table`, & `Pool Table`, are absolutely free for members.
 ---
-#### - Retrieve a list of facilities that charge a fee to members, and that fee is less than 1/50th of the monthly maintenance cost.  
+#### - A list of facilities that charge a fee to members, and that fee is less than 1/50th of the monthly maintenance cost.  
 |facid|name          |membercost|monthlymaintenance|
 |-----|--------------|----------|------------------|
 |4    |Massage Room 1|35        |3000              |
