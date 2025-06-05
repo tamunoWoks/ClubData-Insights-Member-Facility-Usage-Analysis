@@ -45,7 +45,7 @@ SELECT name, monthlymaintenance,
 FROM cd.facilities;
 
 
---- Return the memid, surname, firstname, and joindate of the members who joined after the start of September 2012:
-SELECT memid, surname, firstname, joindate
+--- Return the memid, name and joindate of the members who joined after the start of September 2012:
+SELECT memid, (surname ||' '|| firstname) AS member, joindate
 FROM cd.members
 WHERE joindate >= '2012-09-01';
