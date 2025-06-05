@@ -28,3 +28,12 @@
 1. Guests usually pay way more to use each facility than members.
 2. Some facilities like the `Badminton Court`,  `Table Tennis`, `Snooker Table`, & `Pool Table`, are absolutely free for members.
 ---
+#### - Retrieve a list of facilities that charge a fee to members, and that fee is less than 1/50th of the monthly maintenance cost.  
+|facid|name          |membercost|monthlymaintenance|
+|-----|--------------|----------|------------------|
+|4    |Massage Room 1|35        |3000              |
+|5    |Massage Room 2|35        |3000              |
+
+**Observation:**  
+1. Only the `Massage Room` facilities cost below 1/50th of the monthly maintenance cost.
+---
