@@ -64,3 +64,8 @@ FROM cd.members
 UNION
 SELECT name
 FROM cd.facilities;
+
+
+--- Retrieve the signup date of your latest member:
+SELECT MAX(joindate) AS latestmember
+FROM cd.members;
