@@ -96,3 +96,10 @@
 |37   |Smith Darren           |2012-09-26 18:08:45|
 
 ---
+
+#### The signup date of the latest member:
+| Latest            |
+|:------------------|
+|2012-09-26 18:08:45|
+
+---
