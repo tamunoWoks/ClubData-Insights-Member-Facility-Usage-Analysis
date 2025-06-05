@@ -102,4 +102,6 @@
 |:------------|:------------------|
 |Smith Darren |2012-09-26 18:08:45|
 
+**NOTE:** In all queries requiring the fullnames of club members, I always put the surname before the firstname when cocantenating both fields.
+
 ---
