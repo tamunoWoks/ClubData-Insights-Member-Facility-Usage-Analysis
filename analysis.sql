@@ -67,5 +67,5 @@ FROM cd.facilities;
 
 
 --- Retrieve the signup date of your latest member:
-SELECT MAX(joindate) AS latestmember
+SELECT MAX(joindate) AS latest
 FROM cd.members;
