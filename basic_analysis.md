@@ -96,3 +96,19 @@
 |37   |Smith Darren           |2012-09-26 18:08:45|
 
 ---
+
+#### Return an ordered list of the first 10 surnames in the members table without duplicates:
+|surname|
+|-------|
+|Bader  |
+|Baker  |
+|Boothe |
+|Butters|
+|Coplin |
+|Crumpet|
+|Dare   |
+|Farrell|
+|Genting|
+|GUEST  |
+
+---
