@@ -69,3 +69,15 @@ FROM cd.facilities;
 --- Retrieve the signup date of your latest member:
 SELECT MAX(joindate) AS latest
 FROM cd.members;
+
+
+--- Retrieve the full name & date of the last member who signed up:
+SELECT (surname ||' '|| firstname) AS member, joindate
+FROM cd.members
+WHERE joindate = (SELECT MAX(joindate) AS latestmember
+					FROM cd.members);
+--- This can also be done as:
+SELECT (surname ||' '|| firstname) AS member, joindate
+FROM cd.members
+ORDER BY 2 DESC
+LIMIT 1;
