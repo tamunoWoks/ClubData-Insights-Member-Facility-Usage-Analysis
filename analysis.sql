@@ -56,3 +56,11 @@ SELECT DISTINCT surname
 FROM cd.members
 ORDER BY surname 
 LIMIT 10;
+
+
+--- Retrieve a combined list of all surnames and all facility names:
+SELECT surname
+FROM cd.members
+UNION
+SELECT name
+FROM cd.facilities;
