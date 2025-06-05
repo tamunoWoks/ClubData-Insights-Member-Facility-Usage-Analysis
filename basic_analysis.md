@@ -78,7 +78,7 @@
 |Pool Table     |15                |Cheap    |
 
 **Observation:** 
-1. The `Tennis Courts`'s and the `Massage Room`'s are the only expensive facilities with a monthly maintenance cost of above $100.
+1. The `Tennis Courts`'s and the `Massage Room`'s are the only facilities with a monthly maintenance cost of above $100.
 ---
 
 #### - The memid, surname, firstname, and joindate of the members who joined after the start of September 2012:
