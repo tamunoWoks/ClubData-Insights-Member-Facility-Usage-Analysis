@@ -49,3 +49,10 @@ FROM cd.facilities;
 SELECT memid, (surname ||' '|| firstname) AS member, joindate
 FROM cd.members
 WHERE joindate >= '2012-09-01';
+
+
+--- Return an ordered list of the first 10 surnames in the members table without duplicates:
+SELECT DISTINCT surname
+FROM cd.members
+ORDER BY surname 
+LIMIT 10;
