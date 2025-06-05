@@ -49,3 +49,13 @@
 **Observation:**  
 1. Only the `Massage Room` facilities cost below 1/50th of the monthly maintenance cost.
 ---
+#### - A list of all facilities with the word 'Tennis' in their name:
+|facid|name          |membercost|guestcost|initialoutlay|monthlymaintenance|
+|-----|--------------|----------|---------|-------------|------------------|
+|0    |Tennis Court 1|5         |25       |10000        |200               |
+|1    |Tennis Court 2|5         |25       |8000         |200               |
+|3    |Table Tennis  |0         |5        |320          |10                |
+
+**Observation:** 
+1. 3 facilities have the word `Tennis` in their name.
+---
