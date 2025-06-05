@@ -36,11 +36,16 @@ FROM cd.facilities
 WHERE facid In (1,5);
 
 
---- Retrieve a list of facilities, with each labelled as 'cheap' or 'expensive' if their monthly maintenance costs more than $100:
---- Return the name and monthly maintenance of the facilities in question.
+--- Return the name and monthly maintenance of facilities, with each labelled as 'cheap' or 'expensive' if their monthly maintenance costs more than $100:
 SELECT name, monthlymaintenance,
     CASE 
         WHEN (monthlymaintenance > 100) THEN 'Expensive'
         ELSE 'Cheap'
     END AS cost
 FROM cd.facilities;
+
+
+--- Return the memid, surname, firstname, and joindate of the members who joined after the start of September 2012:
+SELECT memid, surname, firstname, joindate
+FROM cd.members
+WHERE joindate >= '2012-09-01';
