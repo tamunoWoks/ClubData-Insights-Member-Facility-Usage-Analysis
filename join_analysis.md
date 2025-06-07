@@ -36,7 +36,10 @@
 |David Farrell|2012-09-29 17:30:00|
 |David Farrell|2012-09-30 14:30:00|
 
-#### -
+---
+
+#### - Retrieve a list of the start times for bookings for tennis courts, for the date '2012-09-21'.
+#### - The output should be a list of start time and facility name pairings, ordered by the time.
 |starttime|name|
 |:--------|:---|
 |2012-09-21 08:00:00|Tennis Court 1     |
