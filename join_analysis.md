@@ -1,6 +1,6 @@
-- Retrieve a list of the start times for bookings by 'David Farrell':
-|member       |starttime          |
-|-------------|-------------------|
+#### - Retrieve a list of the start times for bookings by 'David Farrell':
+|member|starttime|
+|:-----|:--------|
 |David Farrell|2012-09-18 09:00:00|
 |David Farrell|2012-09-18 13:30:00|
 |David Farrell|2012-09-18 17:30:00|
