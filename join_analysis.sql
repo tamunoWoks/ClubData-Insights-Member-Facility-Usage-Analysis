@@ -48,3 +48,25 @@ FROM cd.members mem
 LEFT JOIN cd.members rec
 	ON rec.memid = mem.recommendedby
 ORDER BY 2, 1;
+
+--- Retrieve a list of all members who have used a tennis court.
+--- Output the name of the court, and the name of the member.
+--- Ensure no duplicate data, and order by membername & facility name.
+SELECT DISTINCT (mem.firstname||' '||mem.surname) AS member,
+	fac.name AS facility
+FROM cd.members AS mem
+JOIN cd.bookings AS bks
+	ON mem.memid = bks.memid
+JOIN cd.facilities AS fac
+	ON bks.facid = fac.facid
+WHERE fac.name LIKE 'Tennis Court%'
+ORDER BY 1, 2;
+--- This can also be written as this:
+SELECT DISTINCT mems.firstname || ' ' || mems.surname AS member, facs.name AS facility
+FROM cd.members mems
+INNER JOIN cd.bookings bks
+	ON mems.memid = bks.memid
+INNER JOIN cd.facilities facs
+	ON bks.facid = facs.facid
+WHERE facs.name IN ('Tennis Court 2','Tennis Court 1')
+ORDER BY member, facility;     
