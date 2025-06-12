@@ -1,3 +1,7 @@
+#### - Retrieve a list of all members who have recommended another member. There should be no duplicates in the list, and that results are ordered by (surname, firstname).
+
+---
+
 #### - Retrieve a list of the start times for bookings by 'David Farrell':
 |member|starttime|
 |:-----|:--------|
