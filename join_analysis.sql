@@ -27,3 +27,7 @@ WHERE  facs.name IN ('Tennis Court 2','Tennis Court 1') AND
 	bks.starttime >= '2012-09-21' AND
 	bks.starttime < '2012-09-22'
 ORDER BY bks.starttime;          
+
+--- SELF JOIN
+--- Retrieve a list of all members who have recommended another member.
+--- Ensure that there are no duplicates in the list, and that results are ordered by (surname, firstname).
