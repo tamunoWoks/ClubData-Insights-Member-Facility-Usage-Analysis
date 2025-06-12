@@ -31,3 +31,9 @@ ORDER BY bks.starttime;
 --- SELF JOIN
 --- Retrieve a list of all members who have recommended another member.
 --- Ensure that there are no duplicates in the list, and that results are ordered by (surname, firstname).
+SELECT DISTINCT rec.firstname AS firstname, 
+	rec.surname AS surname
+FROM cd.members mem
+JOIN cd.members rec
+	ON rec.memid = mem.recommendedby
+ORDER BY 2, 1;
