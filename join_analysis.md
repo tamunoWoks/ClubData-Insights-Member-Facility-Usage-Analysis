@@ -100,3 +100,37 @@
 --- 
 
 #### - Retrieve a list of all members, including the individual who recommended them (if any), without using any joins. Ensure that there are no duplicates in the list, and that each firstname + surname pairing is formatted as a column and ordered:
+|member                 |recommender      |
+|-----------------------|-----------------|
+|Anna Mackenzie         |Darren Smith     |
+|Anne Baker             |Ponder Stibbons  |
+|Burton Tracy           |NULL             |
+|Charles Owen           |Darren Smith     |
+|Darren Smith           |NULL             |
+|David Farrell          |NULL             |
+|David Jones            |Janice Joplette  |
+|David Pinker           |Jemima Farrell   |
+|Douglas Jones          |David Jones      |
+|Erica Crumpet          |Tracy Smith      |
+|Florence Bader         |Ponder Stibbons  |
+|Gerald Butters         |Darren Smith     |
+|GUEST GUEST            |NULL             |
+|Henrietta Rumney       |Matthew Genting  |
+|Henry Worthington-Smyth|Tracy Smith      |
+|Hyacinth Tupperware    |NULL             |
+|Jack Smith             |Darren Smith     |
+|Janice Joplette        |Darren Smith     |
+|Jemima Farrell         |NULL             |
+|Joan Coplin            |Timothy Baker    |
+|John Hunt              |Millicent Purview|
+|Matthew Genting        |Gerald Butters   |
+|Millicent Purview      |Tracy Smith      |
+|Nancy Dare             |Janice Joplette  |
+|Ponder Stibbons        |Burton Tracy     |
+|Ramnaresh Sarwin       |Florence Bader   |
+|Tim Boothe             |Tim Rownam       |
+|Tim Rownam             |NULL             |
+|Timothy Baker          |Jemima Farrell   |
+|Tracy Smith            |NULL             |
+
+---
