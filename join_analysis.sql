@@ -99,3 +99,9 @@ ORDER BY cost DESC;
 
 ---  Retrieve a list of all members, including the individual who recommended them (if any), without using any joins:
 --- Ensure that there are no duplicates in the list, and that each firstname + surname pairing is formatted as a column and ordered:
+SELECT DISTINCT firstname||' '||surname AS member,
+	(SELECT firstname||' '||surname AS recommender
+	 FROM cd.members rec
+	 WHERE rec.memid = mem.recommendedby)
+FROM cd.members mem
+ORDER BY member;
