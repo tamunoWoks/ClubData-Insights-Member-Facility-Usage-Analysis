@@ -95,7 +95,8 @@ bks.starttime < '2012-09-15' AND (
 	(mems.memid = 0 AND bks.slots*facs.guestcost > 30) OR
 	(mems.memid != 0 AND bks.slots*facs.membercost > 30)
 )
-ORDER BY cost DESC;          
+ORDER BY cost DESC;    
+--- Now lets's do this using a subquery
 
 ---  Retrieve a list of all members, including the individual who recommended them (if any), without using any joins:
 --- Ensure that there are no duplicates in the list, and that each firstname + surname pairing is formatted as a column and ordered:
