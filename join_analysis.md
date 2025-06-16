@@ -74,3 +74,5 @@
 |2012-09-21 18:00:00|Tennis Court 2     |
 
 ----
+
+#### - Retrieve a list of bookings on the day of 2012-09-14 which will cost the member (or guest) more than $30 without subqueries. Remember that guests have different costs to members and the listed costs are per half-hour 'slot':
