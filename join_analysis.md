@@ -96,3 +96,7 @@
 |Jack Smith     |Massage Room 1|70  |
 |GUEST GUEST    |Squash Court  |35.0|
 |GUEST GUEST    |Squash Court  |35.0|
+
+--- 
+
+#### - Retrieve a list of all members, including the individual who recommended them (if any), without using any joins. Ensure that there are no duplicates in the list, and that each firstname + surname pairing is formatted as a column and ordered:
